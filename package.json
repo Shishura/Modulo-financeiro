@@ -1,0 +1,36 @@
+{
+  "name": "sisgfpa-api",
+  "version": "1.0.0",
+  "description": "API REST do SISGFPA - Sistema de Gerenciamento Financeiro para Papelarias",
+  "main": "dist/server.js",
+  "type": "module",
+  "packageManager": "pnpm@10.14.0",
+  "scripts": {
+    "dev": "tsx --watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:studio": "prisma studio"
+  },
+  "dependencies": {
+    "@fastify/cors": "11.2.0",
+    "@fastify/swagger": "9.7.0",
+    "@prisma/adapter-pg": "7.7.0",
+    "@prisma/client": "7.7.0",
+    "@scalar/fastify-api-reference": "1.51.0",
+    "better-auth": "1.6.2",
+    "dayjs": "^1.11.21",
+    "dotenv": "^17.4.1",
+    "fastify": "5.8.4",
+    "fastify-type-provider-zod": "6.1.0",
+    "pg": "8.20.0",
+    "zod": "4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "prisma": "7.7.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2"
+  }
+}
